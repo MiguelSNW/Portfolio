@@ -17,15 +17,15 @@ function App() {
         >
           Learn React
         </a>
+      <p>        <BotonLogin/> </p>
 
-        <MyButton />
       </header>
     </div>
   );
 }
-function MyButton() {
+function BotonLogin() {
   return (
-    <button>
+    <button className="btn btn-primary">
       I'm a button
     </button>
   );
