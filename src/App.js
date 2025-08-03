@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import BotonLogin from './components/BotonLogin'; 
 
 function App() {
   return (
@@ -17,18 +18,14 @@ function App() {
         >
           Learn React
         </a>
-      <p>        <BotonLogin/> </p>
+       <p>
+          <BotonLogin className="btn btn-primary">Iniciar sesión</BotonLogin>
+        </p>
 
       </header>
     </div>
   );
 }
-function BotonLogin() {
-  return (
-    <button className="btn btn-primary">
-      I'm a button
-    </button>
-  );
-}
+
 
 export default App;
