@@ -1,6 +1,12 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #f0f0f0; /* gris claro */
+  min-height: 100vh;         /* que ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black; /* o el color que prefieras para el texto */
 }
 
 .App-logo {
@@ -15,7 +21,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: transparent;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

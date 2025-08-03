@@ -8,13 +8,16 @@ import Formulario from './views/Formulario';
 
 function App() {
   return (
+    <div className="App">
     <Routes>
       {/* Vista principal */}
       <Route path="/" element={<Home />} /> {/* Ruta para el Home */}
       <Route path="/dashboard" element={<Dashboard />} /> {/* Ruta para el Dashboard */}
       <Route path="/formulario" element={<Formulario />} /> {/* Ruta para el Dashboard */}
     </Routes>
+  </div>
   );
+  
 }
 
 
