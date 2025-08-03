@@ -1,15 +1,1 @@
-# Redirigir todo www.* a sin www con HTTPS
-https://www.miguelangelgrande.es/* https://miguelangelgrande.es/:splat 301!
-
-# Forzar HTTPS para todo el dominio sin www
-http://miguelangelgrande.es/* https://miguelangelgrande.es/:splat 301!
-
-# Forzar HTTPS para www también (por si alguien pone http)
-http://www.miguelangelgrande.es/* https://miguelangelgrande.es/:splat 301!
-
-# Redirigir acceso raíz /index.html a /
-/index.html / 301
-
-# SPA routing: enviar todo a index.html para React Router
-/*    /index.html   200
-
+https://miguelangelgrande.es/* https://www.miguelangelgrande.es/:splat 301!
