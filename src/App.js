@@ -1,29 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
-import BotonLogin from './components/BotonLogin'; 
+import { Routes, Route } from 'react-router-dom';
+import Home from './views/Home';     
+import Dashboard from './views/Dashboard';    
+import Formulario from './views/Formulario';         
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-       <p>
-          <BotonLogin className="btn btn-primary">Iniciar sesión</BotonLogin>
-        </p>
-
-      </header>
-    </div>
+    <Routes>
+      {/* Vista principal */}
+      <Route path="/" element={<Home />} /> {/* Ruta para el Home */}
+      <Route path="/dashboard" element={<Dashboard />} /> {/* Ruta para el Dashboard */}
+      <Route path="/formulario" element={<Formulario />} /> {/* Ruta para el Dashboard */}
+    </Routes>
   );
 }
 
