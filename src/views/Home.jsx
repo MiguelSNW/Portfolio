@@ -11,7 +11,7 @@ export default function Home() {
   const proyectos = [
     { id: 1, nombre: "Portfolio React", descripcion: "Portfolio personal hecho con React y Bootstrap.", url: "https://miguelangelgrande.es" },
     { id: 2, nombre: "Tienda Online", descripcion: "Ecommerce con Laravel y Vue.js.", url: "https://tiendaejemplo.com" },
-    { id: 3, nombre: 'Vamonos', descripcion: 'Una buena patatita para ti', url: irVamonos},
+    { id: 3, nombre: 'Vamonos', descripcion: 'Una buena patatita para ti', url: '/vamonos'},
   ];
 
   return (
