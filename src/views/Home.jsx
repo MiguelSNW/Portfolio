@@ -1,4 +1,3 @@
-import React from 'react';
 import Boton from '../components/Boton';
 import { useNavigate } from 'react-router-dom';
 
@@ -7,10 +6,12 @@ export default function Home() {
 
   const irLogin = () => navigate('/Formulario');
   const irDashboard = () => navigate('/Dashboard');
+  const irVamonos = () => navigate('/vamonos')
 
   const proyectos = [
     { id: 1, nombre: "Portfolio React", descripcion: "Portfolio personal hecho con React y Bootstrap.", url: "https://miguelangelgrande.es" },
     { id: 2, nombre: "Tienda Online", descripcion: "Ecommerce con Laravel y Vue.js.", url: "https://tiendaejemplo.com" },
+    { id: 3, nombre: 'Vamonos', descripcion: 'Una buena patatita para ti', url: irVamonos},
   ];
 
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <div className="d-flex justify-content-center gap-3 mt-4">
           <Boton className="btn btn-primary btn-lg" onClick={irLogin}>Iniciar sesión</Boton>
           <Boton className="btn btn-outline-primary btn-lg" onClick={irDashboard}>Ir al dashboard</Boton>
+          <Boton className="btn btn-outline-primary btn-lg" onClick={irVamonos}>Ir al vamonos</Boton>
         </div>
       </header>
 
