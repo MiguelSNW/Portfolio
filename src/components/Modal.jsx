@@ -4,8 +4,8 @@ import { Card } from "./Card";
 export default function Modal({ cards = [], onClose }) {
   return (
     <div className="modal-contenedor">
-      <div className="aviso-construccion">
-        🚧 Algún Proyecto puede estar en construcción 🚧
+      <div>
+        Mis Proyectos personales
       </div>
 
       <div className="cards-container">
