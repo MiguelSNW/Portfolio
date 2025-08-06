@@ -1,8 +1,8 @@
 import fotoPerfil from '../../assets/imagen.jpg';
 import fondo from '../../assets/fondo1.jpg';
-import GridDistortion from '../../components/GridDistortion';
-import BlurText from "../../components/BlurText.js";
-
+import GridDistortion from '../../assets/reactbits/GridDistortion.js';
+import BlurText from "../../assets/reactbits/BlurText.js";
+import GradientText from '../../assets/reactbits/GradientText.js';
 
 
 export default function Perfil() {
@@ -19,33 +19,47 @@ export default function Perfil() {
           className="custom-class"
         />
       </div>
-         <div className="header-image-container">
-        <a
-    href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187" // ← usa tu usuario real
+        <div className="header-image-container">
+  <a
+    href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187"
     target="_blank"
     rel="noopener noreferrer"
   >
-        <img
-          src={fotoPerfil}
-          alt="Foto de perfil"
-          className="header-image"
-        /></a>
-      </div>
+    <img
+      src={fotoPerfil}
+      alt="Foto de perfil"
+      className="header-image"
+    />
+  </a>
+
+  <div className="open-to-work-text">
+    <GradientText
+      colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+      animationSpeed={3}
+      showBorder={false}
+      className="custom-class"
+    >
+      OPEN TO WORK!
+    </GradientText>
+  </div>
+</div>
+
 
       <div className="header-text">
         <h1 className="display-4 fw-bold header-title">
           Miguel Ángel Grande Sánchez
         </h1>
         
-     <p className="lead header-description">
+     <div className="lead header-description">
 <BlurText
-  text="Especializado en creación de Aplicaciones Web escalables"
+  text="Desarrollador Web especializado en la creación de aplicaciones web escalables."
   delay={100}          // aparece 1 segundo después del primero
   animateBy="words"
   direction="top"
   className="text-2xl mb-8"
 />
-</p>
+</div>
+
 
       </div>
 

@@ -56,14 +56,20 @@ html, body, #root {
   position: relative;
   z-index: 1;
   text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  text-align: center;
+  max-width: 70%;
 }
 
+/* Imagen y texto OPEN TO WORK en columna y centrados */
 .header-image-container {
   position: relative;
   z-index: 1;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column; /* en columna */
+  justify-content: center;
   align-items: center;
+  gap: 1rem; /* espacio entre foto y texto */
+  margin-top: 0;
 }
 
 .header-image {
@@ -74,6 +80,16 @@ html, body, #root {
   object-position: center center;
   border: 6px solid #0f172a;
   box-shadow: 0 0 15px #38bdf8aa;
+}
+
+.open-to-work-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  color: #40ffaa;
+  font-weight: 700;
+  text-shadow: 0 2px 8px #40ffaa88;
 }
 
 /* Tablets: 769px a 1024px */
@@ -89,7 +105,7 @@ html, body, #root {
     max-width: 100%;
     text-align: center;
     transform: none;
-    margin-bottom: 2rem;
+    margin-bottom: 100px;
   }
 
   .header-title {
@@ -105,11 +121,17 @@ html, body, #root {
   .header-image-container {
     justify-content: center;
     margin-top: 1rem;
+    gap: 1rem;
   }
 
   .header-image {
     width: clamp(180px, 30vw, 220px);
     height: clamp(180px, 30vw, 220px);
+  }
+
+  .open-to-work-text {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    max-width: 280px;
   }
 }
 
@@ -127,7 +149,7 @@ html, body, #root {
     max-width: 100%;
     text-align: center;
     transform: none;
-    margin-bottom: 2rem;
+    margin-bottom: 300px;
   }
 
   .header-title {
@@ -136,31 +158,41 @@ html, body, #root {
   }
 
   .header-description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* para animaciones por palabra */
     font-size: clamp(1rem, 4vw, 1.2rem);
     text-align: center;
   }
 
   .header-image-container {
     justify-content: center;
-    margin-top: 2rem;
+    margin-top: 100px;
     max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .header-image {
     width: clamp(150px, 40vw, 200px);
     height: clamp(150px, 40vw, 200px);
   }
+
+  .open-to-work-text {
+    font-size: clamp(1rem, 5vw, 1.3rem);
+    max-width: 250px;
+  }
 }
 
-/* Sticky menú profesional y minimalista */
 .menu-sticky {
   position: fixed;
-  top: 0;
+  top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(31, 41, 55, 0.95);
+  background-color: rgba(22, 29, 39, 0.95);
   padding: 0.5rem 2rem;
-  border-radius: 0 0 12px 12px;
+  border-radius: 50px;
   color: #e1e1e1;
   font-family: 'Bungee', cursive, sans-serif;
   z-index: 9999;
@@ -168,20 +200,7 @@ html, body, #root {
   gap: 2rem;
   align-items: center;
   height: 50px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   border: 1px solid #3b82f6;
   transition: background-color 0.3s ease;
-}
-
-.menu-sticky a {
-  color: #e1e1e1;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1rem;
-  transition: color 0.3s ease;
-}
-
-.menu-sticky a:hover {
-  color: #60a5fa;
-  cursor: pointer;
 }
