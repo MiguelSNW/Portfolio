@@ -1,6 +1,5 @@
 import fotoPerfil from '../../assets/images/imagen.jpg';
 import fondo from '../../assets/images/fondo1.jpg';
-import GridDistortion from '../../assets/reactbits/GridDistortion.js';
 import BlurText from "../../assets/reactbits/BlurText.js";
 import GradientText from '../../assets/reactbits/GradientText.js';
 import ShinyText from '../../assets/reactbits/ShinyText.js';
@@ -9,18 +8,16 @@ import linkedn from '../../assets/images/linkedn.png';
 
 export default function Perfil() {
   return (
-    <section className="scroll-section header-container">
-      
-      <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
-        <GridDistortion
-          imageSrc={fondo}
-          grid={10}
-          mouse={0.1}
-          strength={0.15}
-          relaxation={0.9}
-          className="custom-class"
-        />
-      </div>
+    <section className="scroll-section header-container"  style={{
+    backgroundImage: `url(${fondo})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    width: '100%',
+    minHeight: '100vh',
+    
+  }}>
+    
         <div className="header-image-container">
   <a
     href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187"
@@ -69,15 +66,26 @@ export default function Perfil() {
 </div>
 
 <div className="button-container">
-  <a href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187" className="button">
-  
+  <a
+    href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187"
+    className="button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <ShinyText text="Linkedn" disabled={false} speed={3} className="custom-class" />
-     <img src={linkedn} alt="LinkedIn" className="icono-red" />
+    <img src={linkedn} alt="LinkedIn" className="icono-red" />
   </a>
-  <a href="mailto:miguelgrandeprogramador@email.com?subject=Contacto desde el portfolio&body=Hola Miguel Ángel, me interesa..." className="button">
+
+  <a
+    href="mailto:miguelgrandeprogramador@email.com?subject=Contacto desde el portfolio&body=Hola Miguel Ángel, me interesa..."
+    className="button"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
     <ShinyText text="Escríbeme" disabled={false} speed={3} className="custom-class" />
   </a>
 </div>
+
 
       </div>
 

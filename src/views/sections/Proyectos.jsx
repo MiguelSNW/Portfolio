@@ -3,8 +3,8 @@ import { useState } from "react";
 import Modal from '../../components/Modal';
 import GameHub from '../../assets/images/Proyecto1.png'
 import Construccion from '../../assets/images/proyecto2.jpg'
-import Galaxy from '../../assets/reactbits/Galaxy';
 import GradientText from '../../assets/reactbits/GradientText';
+import fondo from '../../assets/images/fondo1.jpg';
 
 export default function Proyectos() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -80,17 +80,14 @@ export default function Proyectos() {
 ];
 
   return (
-    <section className="scroll-section d-flex justify-content-center align-items-center flex-column proyectos-section">
-      <div className="galaxy-container">
-    <Galaxy 
-      mouseRepulsion={true}
-      mouseInteraction={true}
-      density={3.0}
-      glowIntensity={0.3}
-      saturation={0.0}
-      hueShift={140}
-    />
-  </div>
+    <section className="scroll-section d-flex justify-content-center align-items-center flex-column proyectos-section"  style={{
+    backgroundImage: `url(${fondo})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    width: '100%',
+    minHeight: '100vh',
+  }}>
       <div onClick={abrirModal} className="folder-container">
         <Folder size={2} color="#5227FF" className="custom-folder" />
       </div>
