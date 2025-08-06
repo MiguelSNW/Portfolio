@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
 
 html, body, #root {
   height: 100%;
@@ -202,5 +204,186 @@ html, body, #root {
   height: 50px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   border: 1px solid #3b82f6;
+  transition: background-color 0.3s ease;
+}
+
+.button-container {
+  display: flex;
+  gap: 0.5rem; /* menos espacio para que quede más compacto */
+  justify-content: flex-start; /* alinea a la izquierda */
+  margin-top: 1rem;
+}
+
+.button {
+  border-radius: 50px;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Bungee', cursive, sans-serif;
+  background-color: rgba(22, 29, 39, 0.95);
+  padding: 0.25rem 0.8rem; /* menos padding para que sea más pequeño */
+  text-decoration: none;
+  color: #e1e1e1;
+  font-size: 0.9rem; /* tamaño más pequeño */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-card {
+  border-radius: 50px;
+  border: 1px solid #3b82f6;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Bungee', cursive, sans-serif;
+  background-color: rgba(22, 29, 39, 0.95);
+  padding: 0.25rem 0.8rem; /* menos padding para que sea más pequeño */
+  text-decoration: none;
+  color: #e1e1e1;
+  font-size: 0.9rem; /* tamaño más pequeño */
+
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.icono-red {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.0); /* empieza transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease forwards;
+}
+
+.modal-content {
+  background-color: #101820 !important;
+  padding: 2rem;
+  border-radius: 30px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  width: 90%;
+  height: 600px;
+  z-index: 99999;
+  border: 1px solid #3b82f6 !important;
+
+  /* Animación de entrada */
+  opacity: 0;
+  transform: scale(0.9);
+  animation: scaleIn 0.4s ease forwards;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  padding-right: 10px;
+  flex: 1;
+}
+
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
+/* ENTRADA Y SALIDA */
+.fade-in {
+  animation: fadeIn 0.3s ease forwards;
+}
+.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+.scale-in {
+  animation: scaleIn 0.3s ease forwards;
+}
+.scale-out {
+  animation: scaleOut 0.3s ease forwards;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn {
+  from { background-color: rgba(0, 0, 0, 0); }
+  to   { background-color: rgba(0, 0, 0, 0.6); }
+}
+@keyframes fadeOut {
+  from { background-color: rgba(0, 0, 0, 0.6); }
+  to   { background-color: rgba(0, 0, 0, 0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes scaleOut {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(0.95); }
+}
+
+.card {
+  width: 18rem;
+  height: 420px; /* altura fija para todas las cards */
+  background: grey;
+  margin-top: 100px;
+  font-family: 'Inter', sans-serif;
+  border-radius: 10px;
+  overflow: hidden; /* recortar si algo sobresale */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  display: block;
+}
+
+.card-body {
+  flex: 1; /* ocupa todo el espacio vertical restante */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.card-text {
+  font-family: 'Bungee', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.card-description {
+  flex: 1; /* que el texto ocupe el espacio flexible */
+  overflow: auto; /* si el texto es muy largo, muestra scroll */
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+
+.btn-salir {
+  margin-top: 25px;
+  align-self: center;
+  background-color: transparent;
+  border: 2px solid #3b82f6;
+  border-radius: 30px;
+  padding: 0.5rem 2rem;
+  color: #e1e1e1;
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }

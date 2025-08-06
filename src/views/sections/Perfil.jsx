@@ -1,8 +1,10 @@
-import fotoPerfil from '../../assets/imagen.jpg';
-import fondo from '../../assets/fondo1.jpg';
+import fotoPerfil from '../../assets/images/imagen.jpg';
+import fondo from '../../assets/images/fondo1.jpg';
 import GridDistortion from '../../assets/reactbits/GridDistortion.js';
 import BlurText from "../../assets/reactbits/BlurText.js";
 import GradientText from '../../assets/reactbits/GradientText.js';
+import ShinyText from '../../assets/reactbits/ShinyText.js';
+import linkedn from '../../assets/images/linkedn.png';
 
 
 export default function Perfil() {
@@ -32,6 +34,7 @@ export default function Perfil() {
     />
   </a>
 
+  <a href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187">
   <div className="open-to-work-text">
     <GradientText
       colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
@@ -42,6 +45,7 @@ export default function Perfil() {
       OPEN TO WORK!
     </GradientText>
   </div>
+  </a>
 </div>
 
 
@@ -60,6 +64,16 @@ export default function Perfil() {
 />
 </div>
 
+<div className="button-container">
+  <a href="http://www.linkedin.com/in/miguel-ángel-grande-sánchez-969abb187" className="button">
+  
+    <ShinyText text="Linkedn" disabled={false} speed={3} className="custom-class" />
+     <img src={linkedn} alt="LinkedIn" className="icono-red" />
+  </a>
+  <a href="mailto:miguelgrandeprogramador@email.com?subject=Contacto desde el portfolio&body=Hola Miguel Ángel, me interesa..." className="button">
+    <ShinyText text="Escríbeme" disabled={false} speed={3} className="custom-class" />
+  </a>
+</div>
 
       </div>
 
