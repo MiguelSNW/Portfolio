@@ -2,7 +2,7 @@
 
 export function Card({ imageUrl, text, description, buttonText, onButtonClick }) {
   return (
-    <div className="card" style={{ width: '18rem', fontFamily: "'Inter', sans-serif", background: '#25282cff', marginTop: '50px', marginLeft:'45px', border: '1px solid white' }}>
+    <div className="card" style={{ width: '18rem', fontFamily: "'Inter', sans-serif", background: '#25282cff', marginTop: '50px', marginLeft:'45px', border: '2px solid #3b82f6' }}>
       <img className="card-img-top" src={imageUrl} alt="..." />
       <div className="card-body">
         <p className="card-text" style={{fontFamily: "'Bungee', sans-serif", color:'white' }}>{text}</p>

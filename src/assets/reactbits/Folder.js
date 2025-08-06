@@ -94,7 +94,7 @@ const Folder = ({
         setPaperOffsets(
           Array.from({ length: maxItems }, () => ({ x: 0, y: 0 }))
         );
-      }, 2000); // 3 segundos
+      }, 1000); // 3 segundos
     } else {
       // Si se cierra manualmente
       setPaperOffsets(

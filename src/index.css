@@ -8,7 +8,7 @@ html, body, #root {
   padding: 0;
   scroll-behavior: smooth;
   font-family: 'Bungee', cursive, sans-serif;
-  background-color: #121212;
+  background-color: #000000;
   color: #e1e1e1;
 }
 
@@ -29,7 +29,7 @@ html, body, #root {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  background: linear-gradient(135deg, #000000 0%, #000000 100%);
   color: #e1e1e1;
   text-shadow: 0 1px 3px rgba(0,0,0,0.7);
 }
@@ -39,7 +39,7 @@ html, body, #root {
   z-index: 1;
   max-width: 70%;
   text-align: left;
-  transform: translateX(-400px);
+  transform: translateX(-300px);
   transition: transform 0.6s ease;
 }
 
@@ -135,9 +135,40 @@ html, body, #root {
     font-size: clamp(1rem, 4vw, 1.4rem);
     max-width: 280px;
   }
-}
 
-/* Móviles: hasta 768px */
+    .modal-content {
+    max-width: 95%;
+    width: 95%;
+    height: auto; /* altura automática para evitar cortes */
+    max-height: 90vh; /* que no supere la ventana visible */
+    padding: 1rem;
+    border-radius: 20px !important;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding-right: 0;
+  }
+
+  .card {
+    width: 100%; /* ocupa todo el ancho posible */
+    height: auto; /* altura flexible según contenido */
+    margin-top: 1rem;
+  }
+
+  .card-img-top {
+    height: 150px; /* un poco más pequeño para móviles */
+  }
+
+  .card-text {
+    font-size: 5px;
+  }
+
+  .card-description {
+    font-size: 5px;
+  }
+}
 @media (max-width: 768px) {
   .scroll-section {
     flex-direction: column;
@@ -145,6 +176,27 @@ html, body, #root {
     height: auto;
     min-height: 100vh;
     text-align: center;
+    max-height: 800px;
+  }
+
+   .menu-sticky {
+    top: 0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(22, 29, 39, 0.95);
+    padding: 0.15rem 0.6rem; /* padding más reducido */
+    border-radius: 20px;
+    color: #e1e1e1;
+    font-family: 'Bungee', cursive, sans-serif;
+    z-index: 9999;
+    display: flex;
+    gap: 0.5rem; /* menos espacio entre elementos */
+    align-items: center;
+    height: 28px; /* más bajo */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3b82f6;
+    transition: background-color 0.3s ease;
+    font-size: 0.7rem; /* fuente muy pequeña */
   }
 
   .header-text {
@@ -184,6 +236,59 @@ html, body, #root {
   .open-to-work-text {
     font-size: clamp(1rem, 5vw, 1.3rem);
     max-width: 250px;
+  }
+
+  /* Modal más pequeño para móviles */
+  .modal-content {
+    padding: 1rem;
+    border-radius: 15px !important;
+    width: 200px;
+    max-height: 550px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Contenedor de cards con scroll horizontal */
+  .cards-container {
+    display: flex;
+    gap: 1rem;
+    overflow-y: auto;
+    width: 100%;
+    padding-bottom: 0.5rem;
+    margin-left: -45px;
+    
+  }
+
+  /* Cards más pequeñas para que quepan dos */
+  .card {
+    min-width: 160px;
+    height: 100px;
+    flex: 0 0 auto; /* no crecer ni encoger, ancho fijo */
+    margin-top: 20px;
+    max-width: 150px;
+    max-height: 300px;
+    
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+
+  .card-text {
+    font-size: 1px;
+  }
+
+  .card-description {
+     font-size: .5px;
+  }
+
+  /* Botón salir más pequeño */
+  .btn-salir {
+    margin-top: 15px;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -271,7 +376,7 @@ html, body, #root {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   max-width: 800px;
   width: 90%;
-  height: 600px;
+  height: 665px;
   z-index: 99999;
   border: 1px solid #3b82f6 !important;
 
@@ -386,4 +491,35 @@ html, body, #root {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+/* Sección principal centrada */
+.proyectos-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.folder-container {
+  cursor: pointer;
+}
+
+.proyectos-text {
+  margin-top: 50px;
+  color: #e1e1e1;
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 1.4rem;
+  user-select: none;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  /* Centrar el texto en la sección */
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
 }

@@ -3,6 +3,7 @@ import Proyectos from './sections/Proyectos';
 import NuevaSeccion from './sections/NuevaSeccion';
 import MenuSticky from '../components/MenuSticky';
 import '../index.css'; // o './App.css' según corresponda
+import Contactame from './sections/Contactame';
 
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <section id="perfil"><Perfil/></section>
         <section id="proyectos"><Proyectos/></section>
         <section id="nueva-seccion"><NuevaSeccion /></section>
+        <section id="contactame"><Contactame /></section>
       </div>
     </>
   );

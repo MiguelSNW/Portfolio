@@ -9,7 +9,7 @@ import linkedn from '../../assets/images/linkedn.png';
 
 export default function Perfil() {
   return (
-    <section className="scroll-section header-container fondo-perfil">
+    <section className="scroll-section header-container">
       
       <div style={{ width: '100%', height: '100%', position: 'absolute', top: 0, left: 0 }}>
         <GridDistortion
@@ -57,11 +57,15 @@ export default function Perfil() {
      <div className="lead header-description">
 <BlurText
   text="Desarrollador Web especializado en la creación de aplicaciones web escalables."
-  delay={100}          // aparece 1 segundo después del primero
+  delay={100}     
   animateBy="words"
   direction="top"
   className="text-2xl mb-8"
 />
+</div>
+
+ <div className="lead header-description2">
+<p>Huelva, España 🇪🇸.</p>
 </div>
 
 <div className="button-container">

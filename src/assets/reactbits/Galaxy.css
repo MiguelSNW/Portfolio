@@ -1,0 +1,6 @@
+/* Esto coloca el Galaxy detrás */
+.galaxy-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
