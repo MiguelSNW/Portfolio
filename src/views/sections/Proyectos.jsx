@@ -93,7 +93,7 @@ export default function Proyectos() {
       </div>
 
       <div className="proyectos-text">
-        Mis Proyectos
+        Proyectos
       </div>
 
       {modalOpen && (
