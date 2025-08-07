@@ -107,6 +107,7 @@ export default function Proyectos() {
           >
             <Modal cards={proyectos} onClose={cerrarModal} />
           </div>
+          
         </div>
       )}
     </section>

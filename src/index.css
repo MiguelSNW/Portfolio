@@ -593,18 +593,27 @@ html, body, #root {
     width: 100%;
   }
 
-  .btn-salir {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-    width: 90%;
-    margin-left: -10px;
-  }
+ 
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 88vh; /* o el alto que quieras */
+  padding: 0 1rem;
+}
 
-  .modal-contenedor {
-    padding: 1rem 0.5rem;
-    max-height: 100vh;
-    overflow-y: auto;
+.modal-contenedor {
+  flex: 1 1 auto; /* que ocupe el máximo espacio posible */
+  overflow-y: auto;
+  max-height: calc(100vh - 60px); /* dejar espacio para botón */
+  padding: 1rem 0.5rem;
+}
+
+ .btn-salir {
+    position: sticky;  
+    bottom: 0px;    
+    left: 50%;
+    width: 90%;
+    z-index: 1000;  
   }
  .menu-sticky {
     padding: 0.3rem 1rem;
