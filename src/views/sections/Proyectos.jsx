@@ -28,7 +28,7 @@ export default function Proyectos() {
     text: 'GAMEHUB',
     description: (
       <>
-        Tienda online con temática de videojuegos. Realizada con
+        Tienda online. Realizada con
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={3}
@@ -59,10 +59,10 @@ export default function Proyectos() {
   },
   {
     imageUrl: Construccion,
-    text: 'PortFolio Personal',
+    text: 'PortFolio',
     description: (
       <>
-       Portfolio profesional realizado a mano junto a la ayuda de componentes de React Bits, realizada puramente con
+       Portfolio realizado puramente con
         <GradientText
           colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
           animationSpeed={3}

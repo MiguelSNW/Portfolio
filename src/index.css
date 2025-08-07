@@ -212,6 +212,7 @@ html, body, #root {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
   overflow-y: auto;
   padding-right: 10px;
   flex: 1;
@@ -268,8 +269,9 @@ html, body, #root {
 
 .card-img-top {
   width: 100%;
-  height: 180px;
+  height: 180px; /* tamaño base para pantallas grandes */
   object-fit: cover;
+  object-position: center center;
   border-radius: 10px 10px 0 0;
   display: block;
 }
@@ -388,6 +390,9 @@ html, body, #root {
     gap: 1rem;
     margin-top: 1rem;
   }
+  .proyectos-text {
+  margin-top: 50px;
+}
 
  .menu-sticky {
   position: fixed;
@@ -425,6 +430,19 @@ html, body, #root {
   .menu-sticky::-webkit-scrollbar-track {
     background: transparent;
   }
+ .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+  }
+
+  .card {
+    width: 45% !important;
+    margin-top: 30px !important;
+  }
+  .card-img-top {
+    height: 140px;
+  }
 }
 
 /* Móviles pequeños (480px y abajo) */
@@ -453,6 +471,10 @@ html, body, #root {
     font-size: 0.8rem;
     padding: 0.4rem 0.8rem;
   }
+
+  .proyectos-text {
+  margin-top: 50px;
+}
 
   .icono-red {
     width: 18px;
@@ -497,4 +519,20 @@ html, body, #root {
 .menu-sticky::-webkit-scrollbar-track {
   background: transparent;
 }
+
+  .cards-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+  }
+
+  .card {
+    width: 47% !important;
+    height: 390px !important;
+    margin-top: 20px !important;
+  }
+
+ .card-img-top {
+    height: 120px;
+  }
 }
