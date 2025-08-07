@@ -366,6 +366,10 @@ html, body, #root {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
   }
 
+  .open-to-work-text{
+    margin-bottom: 20px;
+  }
+
   .header-description,
   .header-description2 {
     font-size: clamp(1rem, 2vw, 1.2rem);
