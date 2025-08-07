@@ -535,4 +535,83 @@ html, body, #root {
  .card-img-top {
     height: 120px;
   }
+
+@media (max-width: 400px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px 0 !important;
+    border: 2px solid #3b82f6;
+    font-size: 0.85rem;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 120px; /* más pequeña pero aún legible */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-body {
+    padding: 0.7rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.4rem 0;
+  }
+
+  .card-description {
+    font-size: 0.8rem;
+    line-height: 1.3;
+    margin-bottom: 0.7rem;
+    color: #ccc;
+    text-align: center;
+  }
+
+  .button-card {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .btn-salir {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    width: 90%;
+    margin-left: -10px;
+  }
+
+  .modal-contenedor {
+    padding: 1rem 0.5rem;
+    max-height: 100vh;
+    overflow-y: auto;
+  }
+ .menu-sticky {
+    padding: 0.3rem 1rem;
+    gap: 1rem;
+    height: 40px;
+    font-size: 0.7rem;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Opcional: ajustar ancho máximo para que no se desborde */
+    max-width: 90vw;
+  }
+
+  .header-image {
+  width: clamp(100px, 15vw, 150px);
+  height: clamp(100px, 15vw, 150px);
+}
+}
+
+
 }

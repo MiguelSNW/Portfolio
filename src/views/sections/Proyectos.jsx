@@ -71,7 +71,7 @@ export default function Proyectos() {
         >
           React
         </GradientText>{' '}
-        centrándome en la fluidez y experiencia del usuario.
+        centrado en la fluidez y experiencia del usuario.
       </>
     ),
     buttonText: 'Ver Proyecto',
