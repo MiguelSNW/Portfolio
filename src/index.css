@@ -381,7 +381,7 @@ html, body, #root {
   .header-image{
     width: 150px;
     height: 150px;
-    margin-top: -150px;
+    margin-top: 0px;
   }
 
   .button-container {
@@ -461,6 +461,7 @@ html, body, #root {
   .header-image {
     width: 150px;
     height: 150px;
+    margin-top: 0px;
   }
 
   .open-to-work-text {
@@ -538,10 +539,19 @@ html, body, #root {
   }
 
 @media (max-width: 400px) {
+  
+  .header-image{
+    width: 150px;
+    height: 150px;
+    margin-top: 0px;
+  }
+  
   .cards-container {
     flex-direction: column;
     align-items: center;
   }
+
+
 
   .card {
     width: 90% !important;
