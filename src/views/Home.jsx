@@ -18,9 +18,9 @@ export default function Home() {
           setTimeout(() => setLoading(false), 300); // espera antes de mostrar la página
           return 100;
         }
-        return prev + 2;
+        return prev + 1;
       });
-    }, 10); // animación fluida
+    }, 15); // animación fluida
 
     return () => clearInterval(interval);
   }, []);
