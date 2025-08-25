@@ -48,7 +48,6 @@ body,
   margin-bottom: 1.5rem;
   font-size: clamp(2rem, 5vw, 3.5rem);
   color: #3b82f6;
-  text-shadow: 0 2px 6px rgba(56, 189, 248, 0.6);
 }
 
 .header-description {
