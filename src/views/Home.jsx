@@ -44,7 +44,6 @@ export default function Home() {
         <section id="perfil"><Perfil /></section>
         <section id="proyectos"><Proyectos /></section>
         <section id="nueva-seccion"><Experiencia /></section>
-        <section id="contactame"><Contactame /></section>
       </div>
     </>
   );

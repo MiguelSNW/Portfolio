@@ -20,9 +20,6 @@ export default function MenuSticky() {
       <a href="#nueva-seccion" onClick={(e) => handleClick(e, "nueva-seccion")}>
         <ShinyText text="Experiencias" disabled={false} speed={3} className="custom-class" />
       </a>
-      <a href="#contactame" onClick={(e) => handleClick(e, "contactame")}>
-        <ShinyText text="Contáctame" disabled={false} speed={3} className="custom-class" />
-      </a>
     </nav>
   );
 }
