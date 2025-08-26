@@ -3,7 +3,7 @@ import Perfil from './sections/Perfil';
 import Proyectos from './sections/Proyectos';
 import Experiencia from './sections/Experiencia';
 import MenuSticky from '../components/MenuSticky';
-import Contactame from './sections/Contactame';
+
 import '../index.css';
 
 export default function Home() {
