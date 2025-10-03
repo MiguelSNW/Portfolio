@@ -2,7 +2,7 @@ import Folder from "../../assets/reactbits/Folder";
 import { useState } from "react";
 import Modal from "../../components/Modal";
 import GameHub from "../../assets/images/Proyecto1.png";
-import Construccion from "../../assets/images/proyecto2.jpg";
+import Construccion from "../../assets/images/proyecto2.png";
 import GradientText from "../../assets/reactbits/GradientText";
 import fondo from "../../assets/images/fondo1.jpg";
 
