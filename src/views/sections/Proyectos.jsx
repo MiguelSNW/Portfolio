@@ -58,7 +58,7 @@ export default function Proyectos() {
     },
     {
       imageUrl: Construccion,
-      text: "PortFolio",
+      text: "MeteoApp",
       description: (
         <>
           Proyecto de previsión meteorológica, realizado con
