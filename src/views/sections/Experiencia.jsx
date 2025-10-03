@@ -1,5 +1,4 @@
 import fondo from "../../assets/images/fondo1.jpg";
-import ScrambledText from "../../assets/reactbits/ScrambledText";
 export default function Experiencia() {
   return (
     <section
@@ -83,23 +82,14 @@ export default function Experiencia() {
         <div className="der">
           <h2>Experiencia Laboral</h2>
           <div className="trabajo">
-            <ScrambledText
-              className="scrambled-text-demo"
-              radius={30}
-              duration={2.5}
-              speed={0.5}
-              scrambleChars={".:"}
-            >
-              <h3>Desarrollador Full Stack - REGISOFT ™</h3>
-              <p>
-                <strong>20/03/2025 - 20/06/2025</strong>
-              </p>
-              <p>
-                Diseño y desarrollo de aplicaciones web con Laravel y Vue.js,
-                integración de APIs externas y despliegue en servidores
-                internos.
-              </p>
-            </ScrambledText>
+            <h3>Desarrollador Full Stack - REGISOFT ™</h3>
+            <p>
+              <strong>20/03/2025 - 20/06/2025</strong>
+            </p>
+            <p>
+              Diseño y desarrollo de aplicaciones web con Laravel y Vue.js,
+              integración de APIs externas y despliegue en servidores internos.
+            </p>
           </div>
         </div>
       </div>
