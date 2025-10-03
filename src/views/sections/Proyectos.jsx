@@ -3,7 +3,6 @@ import { useState } from "react";
 import Modal from "../../components/Modal";
 import GameHub from "../../assets/images/Proyecto1.png";
 import Construccion from "../../assets/images/proyecto2.png";
-import GradientText from "../../assets/reactbits/GradientText";
 import fondo from "../../assets/images/fondo1.jpg";
 
 export default function Proyectos() {
@@ -28,25 +27,8 @@ export default function Proyectos() {
       text: "GAMEHUB",
       description: (
         <>
-          Tienda online. Realizada con
-          <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-            animationSpeed={3}
-            showBorder={false}
-            className="custom-class"
-          >
-            Vue.js
-          </GradientText>{" "}
-          como frontend y{" "}
-          <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-            animationSpeed={3}
-            showBorder={false}
-            className="custom-class"
-          >
-            Laravel PHP
-          </GradientText>{" "}
-          como backend, usando API REST.
+          Tienda online. Realizada con Vue.js como frontend y Laravel PHP como
+          backend, usando API REST.
         </>
       ),
       buttonText: "Ver Proyecto",
@@ -61,16 +43,8 @@ export default function Proyectos() {
       text: "MeteoApp",
       description: (
         <>
-          Proyecto de previsión meteorológica, realizado con
-          <GradientText
-            colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-            animationSpeed={3}
-            showBorder={false}
-            className="custom-class"
-          >
-            React
-          </GradientText>{" "}
-          centrado en la fluidez y experiencia del usuario.
+          Proyecto simple de previsión meteorológica, realizado con React
+          centrado en el uso de API'S externas gratuitas.
         </>
       ),
       buttonText: "Ver Proyecto",
